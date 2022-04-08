@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="initial-scale=1, maximum-scale=1, user-scalable=yes"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <title>Sobel Filter</title>
+        <link href="styles/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="bg-black">
+            
+        </div>
+        <div class="container">
+            <div class="  bg-secondary m-4">
+                <h1 class="text-center text-decoration-underline text-warning my-5 fs-1 fw-bold p-3">Sobel Filter</h1>
+
+                <div class="">
+                    <input
+                        class="form-control form-control w-50 mx-auto mb-5"
+                        type="file"
+                        id="file"
+                    />
+                </div>
+                <div class="col pb-4">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <div class="">
+                            <h2 class="my-3 ">Main Image:</h2>
+                            <canvas id="canvas"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-6 d-flex justify-content-center">
+                        <div class="">
+                            <h2 class="my-3">Sobel Filter Image:</h2>
+                            <canvas id="canvas-sobel"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+        <script src="sobel.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
